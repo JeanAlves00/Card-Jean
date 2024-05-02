@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+}
+body {
+  background-color: #1e272e;
+  color: #d2dae2;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding: 24px;
+}
+header .profile-avatar {
+  width: 250px;
+  height: 239px;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid;
+  border-radius: 50%;
+  animation: glowing 5s infinite;
+}
+@keyframes glowing {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: blue;
+  }
+  50% {
+    border-color: green;
+  }
+  75% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: red;
+  }
+}
+.profile-bio .profile-bio-name {
+  font-size: 16px;
+}

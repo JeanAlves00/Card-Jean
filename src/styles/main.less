@@ -1,0 +1,71 @@
+@import "variaveis.less";
+@brackpointMobile: ~"(max-width: 767px)";
+@brackpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    background-color: @corDeFundo;
+    color: @corDeTexto;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @brackpointTablet {
+        max-width: 80%;
+    }
+
+    @media @brackpointMobile {
+        max-width: 70%;
+    }
+}
+
+header {
+    padding: 24px;
+
+    .profile-avatar {
+        width: 250px;
+        height: 239px;
+        display: block;
+        margin: 0 auto;
+        border: 3px solid;
+        border-radius: 50%;
+        animation: glowing 5s infinite;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: blue;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+.profile-bio {
+    .&-name{
+        font-size: 16px;
+    }
+    
+    .&-title {
+        font-size: 14px;
+    }
+}
