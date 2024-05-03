@@ -72,6 +72,7 @@ header .profile-avatar {
   max-width: 240px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 8px;
 }
 .social-links li {
   list-style: none;
@@ -84,4 +85,7 @@ header .profile-avatar {
   .social-links {
     justify-content: center;
   }
+}
+.margin-bottom8 {
+  margin-bottom: 8px;
 }
