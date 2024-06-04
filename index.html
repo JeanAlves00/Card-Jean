@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="build/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,82 +22,134 @@
                 <h1 class="profile-bio-name">Solis</h1>
                 <h2 class="profile-bio-subtitle">O pior tipo de estranho e apaneas você, sendo você mesmo.</h2>
             </div>
-    </header>
-    <nav>
-        <ul class="social-links">
-            <li>
-                <a href="https://www.facebook.com/?locale=pt_BR">
-                    <img class="social-links-img" src="./src/images/facebook-svgrepo-com.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.twitch.tv/s01lis">
-                    <img class="social-links-img" src="./src/images/twitch-svgrepo-com.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="https://myanimelist.net/profile/Jean_Alves">
-                    <img class="social-links-img" src="./src/images/myanimelist-svgrepo-com.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.backloggd.com/u/Jeanalves/">
-                    <img class="social-links-img" src="./src/images/game-controller-round-797-svgrepo-com.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="https://letterboxd.com/jeanalves/">
-                    <img class="social-links-img" src="./src/images/letterboxd-svgrepo-com.svg" alt="">
-                </a>
-            </li>
-        </ul>
-    </nav>
+        </header>
+        <nav>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        <img class="social-links-img" src="./src/images/facebook-svgrepo-com.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitch.tv/s01lis">
+                        <img class="social-links-img" src="./src/images/twitch-svgrepo-com.svg" alt="Twitch">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://myanimelist.net/profile/Jean_Alves">
+                        <img class="social-links-img" src="./src/images/myanimelist-svgrepo-com.svg" alt="MyAnimeList">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.backloggd.com/u/Jeanalves/">
+                        <img class="social-links-img" src="./src/images/game-controller-round-797-svgrepo-com.svg" alt="Backloggd">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://letterboxd.com/jeanalves/">
+                        <img class="social-links-img" src="./src/images/letterboxd-svgrepo-com.svg" alt="Letterboxd">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
+
+    <!-- Seções corrigidas -->
     <section id="obras-favoritas">
         <div class="container">
-            <button id="expandButton">Clique para Expandir</button>
-            <div id="extraContent" class="hidden">
-            <h2>Conteúdo Adicional</h2>
-            <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
-        </div>
+            <button class="expandButton">Obras favoritas</button>
+            <div class="extraContent hidden">
+                <h2 class="line-title">trending games</h2>
+                <div class="owl-carousel custom-carousel owl-theme">
+                  <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+                    <div class="item-desc">
+                      <h3>Dota 2</h3>
+                      <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+                        Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+                    <div class="item-desc">
+                      <h3>The Witcher 3</h3>
+                      <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+                        of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
+                    <div class="item-desc">
+                      <h3>RDR 2</h3>
+                      <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+                        Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+                    <div class="item-desc">
+                      <h3>PUBG Mobile</h3>
+                      <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+                        Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+                    <div class="item-desc">
+                      <h3>Fortnite</h3>
+                      <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+                        for Blizzard Entertainment's Warcraft III.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+                    <div class="item-desc">
+                      <h3>Far Cry 5</h3>
+                      <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+                        which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <section id="jogos-favoritos">
         <div class="container">
-            <button id="expandButton">Clique para Expandir</button>
-            <div id="extraContent" class="hidden">
-            <h2>Conteúdo Adicional</h2>
-            <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
-        </div>
+            <button class="expandButton">Jogos favoritos</button>
+            <div class="extraContent hidden">
+                <h2>Conteúdo Adicional</h2>
+                <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
+            </div>
         </div>
     </section>
+
     <section id="filmes-favoritos">
         <div class="container">
-            <button id="expandButton">Clique para Expandir</button>
-            <div id="extraContent" class="hidden">
-            <h2>Conteúdo Adicional</h2>
-            <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
-        </div>
+            <button class="expandButton">Filmes favoritos</button>
+            <div class="extraContent hidden">
+                <h2>Conteúdo Adicional</h2>
+                <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
+            </div>
         </div>
     </section>
+
     <section id="series-favoritas">
         <div class="container">
-            <button id="expandButton">Clique para Expandir</button>
-            <div id="extraContent" class="hidden">
-            <h2>Conteúdo Adicional</h2>
-            <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
-        </div>
+            <button class="expandButton">Series favoritas</button>
+            <div class="extraContent hidden">
+                <h2>Conteúdo Adicional</h2>
+                <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
+            </div>
         </div>
     </section>
+
     <section id="animes-favoritos">
         <div class="container">
-            <button id="expandButton">Clique para Expandir</button>
-            <div id="extraContent" class="hidden">
-            <h2>Conteúdo Adicional</h2>
-            <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
-        </div>
+            <button class="expandButton">Animes favoritos</button>
+            <div class="extraContent hidden">
+                <h2>Conteúdo Adicional</h2>
+                <p>Este é o conteúdo que aparece quando o botão é clicado. Você pode colocar qualquer coisa aqui, como texto, imagens, ou outros elementos HTML.</p>
+            </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="build/js/bundle.js"></script>
 </body>
 </html>

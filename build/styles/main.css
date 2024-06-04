@@ -1,3 +1,6 @@
+.clear {
+  clear: both;
+}
 .margin-bottom8 {
   margin-bottom: 8px;
 }
@@ -69,6 +72,10 @@ nav .social-links {
 nav .social-links-img {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease;
+}
+nav .social-links-img:hover {
+  transform: scale(1.5);
 }
 section {
   margin-bottom: 20px;

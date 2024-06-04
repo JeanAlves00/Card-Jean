@@ -1,10 +1,22 @@
-document.getElementById('expandButton').addEventListener('click', function() {
-  var extraContent = document.getElementById('extraContent');
-  if (extraContent.classList.contains('hidden')) {
+"use strict";
+
+document.querySelectorAll('.expandButton').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var extraContent = this.nextElementSibling;
+    if (extraContent.classList.contains('hidden')) {
       extraContent.classList.remove('hidden');
-      this.textContent = 'Clique para Recolher';
-  } else {
+    } else {
       extraContent.classList.add('hidden');
-      this.textContent = 'Clique para Expandir';
-  }
+    }
+  });
+});
+$(".custom-carousel").owlCarousel({
+  autoWidth: true,
+  loop: true
+});
+$(document).ready(function () {
+  $(".custom-carousel .item").click(function () {
+    $(".custom-carousel .item").not($(this)).removeClass("active");
+    $(this).toggleClass("active");
+  });
 });
