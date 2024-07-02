@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="build/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,54 +55,39 @@
     <section id="obras-favoritas">
         <div class="container">
             <button class="expandButton">Obras favoritas</button>
-            <div class="extraContent hidden">
-                <h2 class="line-title">trending games</h2>
-                <div class="owl-carousel custom-carousel owl-theme">
-                  <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
-                    <div class="item-desc">
-                      <h3>Dota 2</h3>
-                      <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                        Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x600" alt="Imagem 1">
+                        <div class="carousel-caption">
+                            <h5>Primeira Imagem</h5>
+                            <p>Descrição da primeira imagem.</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
-                    <div class="item-desc">
-                      <h3>The Witcher 3</h3>
-                      <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
-                        of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x600" alt="Imagem 2">
+                        <div class="carousel-caption">
+                            <h5>Segunda Imagem</h5>
+                            <p>Descrição da segunda imagem.</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
-                    <div class="item-desc">
-                      <h3>RDR 2</h3>
-                      <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                        Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x600" alt="Imagem 3">
+                        <div class="carousel-caption">
+                            <h5>Terceira Imagem</h5>
+                            <p>Descrição da terceira imagem.</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
-                    <div class="item-desc">
-                      <h3>PUBG Mobile</h3>
-                      <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                        Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                    </div>
-                  </div>
-                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
-                    <div class="item-desc">
-                      <h3>Fortnite</h3>
-                      <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
-                        for Blizzard Entertainment's Warcraft III.</p>
-                    </div>
-                  </div>
-                  <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
-                    <div class="item-desc">
-                      <h3>Far Cry 5</h3>
-                      <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
-                        which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                    </div>
-                  </div>
                 </div>
+                <button class="carousel-control carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control carousel-control-next" onclick="nextSlide()">&#10095;</button>
+                <div class="carousel-indicators">
+                    <button onclick="currentSlide(0)" class="active"></button>
+                    <button onclick="currentSlide(1)"></button>
+                    <button onclick="currentSlide(2)"></button>
                 </div>
             </div>
+        
         </div>
     </section>
 
@@ -148,8 +130,7 @@
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script src="build/js/bundle.js"></script>
 </body>
 </html>
